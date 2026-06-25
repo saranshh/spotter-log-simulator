@@ -1,0 +1,43 @@
+/* App layout styles */
+
+.app-container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+@media (max-width: 1024px) {
+  .dashboard-grid {
+    grid-template-columns: 1fr !important;
+  }
+  .map-timeline-row {
+    grid-template-columns: 1fr !important;
+    height: auto !important;
+  }
+  .map-timeline-row > div {
+    height: 350px !important;
+  }
+}
+
+.timeline-item::after {
+  content: '';
+  position: absolute;
+  left: -2px;
+  top: 15px;
+  bottom: -15px;
+  width: 2px;
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.timeline-item:last-child::after {
+  display: none;
+}
+
+/* Custom Div Icon styling for Map */
+.custom-div-icon {
+  background: none !important;
+  border: none !important;
+}
+
+.suggestion-item:hover {
+  background-color: #3b82f6 !important;
+}
