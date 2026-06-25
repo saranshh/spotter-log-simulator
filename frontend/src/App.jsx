@@ -5,7 +5,7 @@ import LocationInput from "./components/LocationInput";
 import { Navigation, Calendar, Clock, MapPin, Truck, AlertTriangle, Play, ChevronLeft, ChevronRight, FileText, Compass } from "lucide-react";
 import "./App.css";
 
-const API_BASE_URL = "http://localhost:8000";
+const API_BASE_URL = import.meta.env.VITE_API_BASE_URL || "http://localhost:8000";
 
 export default function App() {
   const [currentLocation, setCurrentLocation] = useState("Chicago, IL");
